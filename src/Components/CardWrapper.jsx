@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import MediaLink from "./MediaLink";
 
 function CardWrapper() {
     const [news, newsFlash] = useState();
@@ -20,7 +21,14 @@ function CardWrapper() {
         console.log(news);
     }, [news])
 
-    return <div>CardWrapper</div>
+    return <div> 
+        {news && <div><h1>{news.source.name}</h1> 
+                <h2>{news.title}</h2>
+                <h3>{news.author}</h3> 
+                <MediaLink urlToImage={news.urlToImage} />
+                </div> 
+                }
+                </div>
 }
 
 export default CardWrapper;
