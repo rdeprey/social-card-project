@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
-import CardWrapper from "./Components/CardWrapper"
+import NewsWrapper from "./Components/NewsWrapper";
 
 // Use dotenv to access environment variables in the app
 require('dotenv').config();
@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <CardWrapper />
+      <NewsWrapper />
     </div>
   );
 }
