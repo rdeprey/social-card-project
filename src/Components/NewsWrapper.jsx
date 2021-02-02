@@ -22,8 +22,8 @@ function NewsWrapper() {
     }, [news])
 
     return  <>
-            {news && news.map(article => {
-                return <CardWrapper article={article} />
+            {news && news.map((article, index) => {
+                return <CardWrapper article={article} key={index} />
             })}
         </>
 }

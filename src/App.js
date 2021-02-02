@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./styles.css";
 import NewsWrapper from "./Components/NewsWrapper";
 
@@ -6,7 +6,6 @@ import NewsWrapper from "./Components/NewsWrapper";
 require('dotenv').config();
 
 export default function App() {
-  const [data, setData] = useState();
 
   return (
     <div className="App">
